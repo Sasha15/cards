@@ -1,0 +1,363 @@
+body {
+	font-family: 'Arimo', sans-serif;
+}
+.ba-grid{
+	margin-left: -40px;
+}
+.ba-grid > [class*="ba-width"]{
+	padding-left: 40px;
+}
+.ba-grid+.ba-grid{
+	margin-top: 20px;
+}
+.card-container {
+	margin: 20px auto;
+	position:relative;
+	width: 1200px;
+}
+.card-container div{
+	display: inline-block;
+}
+.card {
+	height: 340px;
+	width: 240px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(20, 20, 20, 0.30);
+	padding: 5px;
+	position: relative;
+	background-color:#E4E6D1;
+}
+.back img{
+	width:100%;
+	height: 100%;
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(20, 20, 20, 0.30);
+}
+
+.diamonds p,
+.hearts p,
+.diamonds i,
+.hearts i{
+	color: red;
+}
+.card p{
+	position: relative;
+	font-size: 25px;
+	margin:0;
+	padding-left:10px;
+
+}
+.card i{
+	display: inline-block;
+	font-size: 55px;
+	text-align: center;
+}
+.ace i {
+	font-size: 150px;
+	margin:50px 50px;
+
+}
+.mark{
+	position: relative;
+	width:185px;
+	height:270px;
+	margin-top:5px;
+	margin-left:27px;
+}
+.diamonds p:after,
+.spades p:after,
+.clubs p:after,
+.hearts p:after{
+	font-size: 25px;
+	position: absolute;
+	top: 100%;
+	left: 4%;
+}
+.spades p:after{
+	content: "♠";
+}
+.clubs p:after{
+	content: "♣";
+}
+.hearts p:after{
+	content: "♥";
+}
+.diamonds p:after{
+	content: "♦";
+}
+.reverse{
+	transform: rotate(180deg)
+}
+div.card.king,
+div.card.queen,
+div.card.jack {
+	background-repeat: no-repeat;
+	background-position: 50%50%;
+	background-color:#E4E6D1;
+	background-size: cover;
+}
+.king.diamonds{
+	background:url("../img/king_diamonds.jpg");
+}
+.king.hearts{
+	background:url("../img/king_hearts.jpg");
+}
+.king.clubs{
+	background:url("../img/king_clubs.jpg");
+}
+.king.spades{
+	background:url("../img/king_spades.jpg");
+}
+
+.queen.diamonds{
+	background:url("../img/queen_diamonds.jpg");
+}
+.queen.hearts{
+	background:url("../img/queen_hearts.jpg");
+}
+.queen.clubs{
+	background:url("../img/queen_clubs.jpg");
+}
+.queen.spades{
+	background:url("../img/queen_spades.jpg");
+}
+
+.jack.diamonds{
+	background:url("../img/jack_diamonds.jpg");
+}
+.jack.hearts{
+	background:url("../img/jack_hearts.jpg");
+}
+.jack.clubs{
+	background:url("../img/jack_clubs.jpg");
+}
+.jack.spades{
+	background:url("../img/jack_spades.jpg");
+}
+.column{
+	position: absolute;
+	width:32px;
+}
+
+/*TEN*/
+.ten .column:first-child{
+	top:3%;
+	left:10%;
+}
+.ten .column:last-child{
+	top:3%;
+	right:10%;
+}
+.ten .column:nth-child(2){
+	top:15%;
+	left:41%;
+}
+.ten .column:nth-child(2) i:first-child{
+	padding-bottom:60px;
+}
+
+/*NINE*/
+.nine .column:first-child{
+	top:3%;
+	left:10%;
+}
+.nine .column:last-child{
+	top:3%;
+	right:10%;
+}
+.nine .column:nth-child(2){
+	top:15%;
+	left:41%;
+}
+.nine .column:nth-child(2) i:first-child {
+	padding-top: 60px;
+}
+
+/*EIGHT*/
+.eight .column:first-child{
+	top:7%;
+	left:10%;
+}
+.eight .column:first-child i{
+	padding-bottom: 15px;
+}
+.eight .column:last-child{
+	top:7%;
+	right:10%;
+}
+.eight .column:last-child i{
+	padding-bottom: 15px;
+}
+.eight .column:nth-child(2){
+	top:19%;
+	left:41%;
+}
+.eight .column:nth-child(2) i:first-child {
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+
+/*SEVEN*/
+.seven .column:first-child{
+	top:7%;
+	left:10%;
+}
+.seven .column:first-child i{
+	padding-bottom: 15px;
+}
+.seven .column:last-child{
+	top:7%;
+	right:10%;
+}
+.seven .column:last-child i{
+	padding-bottom: 15px;
+}
+.seven .column:nth-child(2){
+	top:21%;
+	left:41%;
+}
+
+/*SIX*/
+.six .column:first-child{
+	top:7%;
+	left:10%;
+}
+.six .column:first-child i{
+	padding-bottom: 15px;
+}
+.six .column:last-child{
+	top:7%;
+	right:10%;
+}
+.six .column:last-child i{
+	padding-bottom: 15px;
+}
+
+/*FIFE*/
+.fife .column:first-child{
+	top:7%;
+	left:10%;
+}
+.fife .column:first-child i{
+	padding-bottom: 50px;
+}
+.fife .column:last-child{
+	top:7%;
+	right:10%;
+}
+.fife .column:last-child i{
+	padding-bottom: 50px;
+}
+.fife .column:nth-child(2){
+	top:37%;
+	left:41%;
+}
+
+/*FOUR*/
+.four .column:first-child{
+	top:7%;
+	left:10%;
+}
+.four .column:first-child i{
+	padding-bottom: 50px;
+}
+.four .column:last-child{
+	top:7%;
+	right:10%;
+}
+.four .column:last-child i{
+	padding-bottom: 50px;
+}
+
+/*THREE*/
+.three .column{
+	top:3%;
+	left:41%;
+}
+.three .column i{
+	padding-bottom:20px;
+}
+
+/*TWO*/
+.two .column{
+	top:3%;
+	left:41%;
+}
+.two .column:first-child i{
+	padding-bottom: 60px;
+}
+
+/*WAS TAKEN FROM
+http://webformyself.com/sozdajte-animaciyu-perevorota-v-css/*/
+/* весь контейнер поддерживает перспективу */
+.flip-container {
+	perspective: 1000;
+}
+/* переверните сторону при проведении мышью */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	height: 350px;
+	width: 250px;
+}
+
+/* здесь находится скорость перевертывания */
+.flipper {
+	transition: .5s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* скройте обратную сторону во время переворота */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+
+/* лицевая сторона размещена над обратной */
+.front {
+	z-index: 2;
+	position: relative;
+	background-color: #fff;
+	transition: .7s ease-in-out;
+}
+
+/* обратная, изначально скрытая сторона */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
